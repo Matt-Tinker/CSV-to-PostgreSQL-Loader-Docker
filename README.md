@@ -36,21 +36,6 @@ This repo is exactly that: a tiny, production‑style loader you can run and ver
 
 ---
 
-## Screenshots
-
-> Put your images under `docs/screenshots/` (or update the paths below).
-
-**SQLTools in VS Code (connected)**  
-![SQLTools connected](docs/screenshots/sqltools-connected.png)
-
-**pgAdmin (connected to the same DB)**  
-![pgAdmin connected](docs/screenshots/pgadmin-connected.png)
-
-**Docker Compose up & loader import**  
-![Compose up logs](docs/screenshots/compose-up.png)
-
----
-
 ## Tech stack
 
 - **PostgreSQL 16** (official image)  
