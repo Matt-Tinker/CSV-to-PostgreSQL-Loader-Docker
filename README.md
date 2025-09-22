@@ -9,18 +9,6 @@ A one-command data loader that turns **CSV files** into a **PostgreSQL** databas
 
 ---
 
-## Why this exists
-
-Recruiters and teams often ask for a small, real project that shows:
-- You can **containerize** infra and make it reproducible.
-- You know **data loading** with **pandas/SQLAlchemy**.
-- You can design a **clean developer experience** (DX) with `.env`‑only configuration.
-- You can troubleshoot common Postgres gotchas (ports, volumes, credentials).
-
-This repo is exactly that: a tiny, production‑style loader you can run and verify in minutes.
-
----
-
 ## What it does
 
 - Spins up **PostgreSQL 16** in Docker.
