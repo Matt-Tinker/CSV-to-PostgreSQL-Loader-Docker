@@ -65,9 +65,9 @@ This repo is exactly that: a tiny, production‑style loader you can run and ver
 
 ```dotenv
 # PostgreSQL
-POSTGRES_USER=lucifer
-POSTGRES_PASSWORD=devpass
-POSTGRES_DB=mydb
+POSTGRES_USER=user
+POSTGRES_PASSWORD=password
+POSTGRES_DB=name_of_db
 POSTGRES_PORT=5432
 POSTGRES_HOST=postgres   # inside compose; use localhost when connecting from tools
 
@@ -138,9 +138,9 @@ CSV files ──► pandas.read_csv ──► tidy columns ──► infer dates
 Create a connection with:
 - Server: `127.0.0.1`
 - Port: `5432`
-- Database: `mydb`
-- Username: `lucifer`
-- Password: `devpass`
+- Database: `name_of_db`
+- Username: `user`
+- Password: `password`
 - SSL: Disabled
 
 **Sample queries**
@@ -171,7 +171,7 @@ docker compose up --build
 ```
 Or alter the role inside the container:
 ```bash
-docker exec -it pg_csv psql -U lucifer -d mydb -c "ALTER USER lucifer WITH PASSWORD 'devpass';"
+docker exec -it pg_csv psql -U user -d name_of_db -c "ALTER USER user WITH PASSWORD 'password';"
 ```
 
 **No tables created**  
