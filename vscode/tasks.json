@@ -1,0 +1,9 @@
+
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "Docker: up (build + load CSVs)", "type": "shell", "command": "docker compose up --build" },
+    { "label": "Docker: up DB only", "type": "shell", "command": "docker compose up -d postgres" },
+    { "label": "Docker: reset DB (wipe data)", "type": "shell", "command": "docker compose down -v" }
+  ]
+}
