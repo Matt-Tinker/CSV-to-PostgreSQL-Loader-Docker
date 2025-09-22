@@ -136,7 +136,7 @@ CSV files ──► pandas.read_csv ──► tidy columns ──► infer dates
 
 **VS Code (SQLTools)**  
 Create a connection with:
-- Server: `127.0.0.1`
+- Server: `127.0.0.1 / localhost`
 - Port: `5432`
 - Database: `name_of_db`
 - Username: `user`
