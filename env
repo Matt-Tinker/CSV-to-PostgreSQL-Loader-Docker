@@ -1,0 +1,22 @@
+
+# --- PostgreSQL (Docker) ---
+POSTGRES_USER=user
+POSTGRES_PASSWORD=password
+POSTGRES_DB=db_name
+POSTGRES_PORT=5432
+
+# Inside docker-compose, the DB host is the service name:
+POSTGRES_HOST=postgres
+
+# --- What to load ---
+# EITHER import a single CSV file by setting CSV_FILE (path is relative to this folder),
+# OR import all files from a folder with CSV_DIR + CSV_GLOB (default).
+# CSV_FILE=./data/example.csv
+CSV_DIR=./data
+CSV_GLOB=*.csv
+
+# --- Loader behavior ---
+SCHEMA_NAME=public
+IF_EXISTS=replace         # replace | append | fail
+AUTO_PK=id                # if this column exists & is unique, it's set as PRIMARY KEY
+CHUNKSIZE=4000                # e.g., 50000 for very large files
